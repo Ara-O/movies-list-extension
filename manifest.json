@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Movies List",
+    "version": "1.0",
+    "description": "A simple and clean extension for adding movies that you want to watch",
+    "type": "storage",
+    "icons": {
+        "48": "icons/movies-icon.png"
+    },
+    "data": {
+        "movies_list": []
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_icon": "icons/movies-icon.png",
+        "default_title": "Movies List",
+        "default_popup": "index.html"
+    }
+}

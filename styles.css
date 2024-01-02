@@ -1,0 +1,113 @@
+html {
+    background: rgb(24, 24, 24);
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 245px;
+    padding: 10px;
+    color: rgb(245, 245, 245);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button {
+    background: rgb(85, 85, 85);
+    color: rgb(245, 245, 245);
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 500ms linear;
+}
+
+.options button:hover {
+    background: rgb(55, 55, 55);
+}
+
+/* ADD MOVIE SECTION */
+.add-movie-section {
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.movie-input {
+    height: 30px;
+    width: 150px;
+    border: none;
+    background: rgb(85, 85, 85);
+    outline: none;
+    font-size: 12px;
+    color: rgb(245, 245, 245);
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.add-movie-button {
+    background-color: rgb(10, 10, 10);
+    color: rgb(245, 245, 245);
+    border: none;
+    height: 31px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 500ms linear;
+}
+
+.add-movie-button:hover {
+    background-color: black;
+}
+
+/* VIEW MOVIES SECTION */
+.view-movies-section {
+    display: none;
+    color: rgb(245, 245, 245);
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 12px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+.view-movies-section ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.movie-title {
+    margin: 0px;
+    max-width: 195px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.icon-tabler {
+    cursor: pointer;
+}
+
+.visible-flex {
+    display: flex;
+}
